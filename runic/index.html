@@ -17,11 +17,16 @@
 
     <div id="integrated-terminal"></div>
 
-    <a href="https://app.squads.so/squads/EKExYCyFcUQFBm9WtJSWV4xawBpEAHRR5tHPxHpbLpmE/home" id="treasury-link" target="_blank">Runes Multi Sig Treasury</a>
+    <div id="treasury-container">
+        <a href="https://app.squads.so/squads/EKExYCyFcUQFBm9WtJSWV4xawBpEAHRR5tHPxHpbLpmE/home" id="treasury-link" target="_blank">Runes Multi Sig Treasury</a>
+        <div id="wallet-balance">Loading balance...</div>
+    </div>
 
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
     <script src="js/converter.js"></script>
     <script src="js/runic-matrix.js"></script>
     <script src="https://unpkg.com/@jup-ag/core@^2.0.0-beta.10/dist/index.umd.js"></script>
     <script src="js/jupiter-init.js"></script>
+    <script src="js/wallet-balance.js"></script>
 </body>
 </html>
