@@ -8,11 +8,17 @@
 </head>
 <body>
     <canvas id="runicMatrix"></canvas>
+    <div id="character-container">
+        <img src="../mnt/data/sytones3.png" alt="Character" id="character-image">
+    </div>
     <div class="container">
         <h1>Runic Text Converter</h1>
-        <textarea id="input" rows="5" placeholder="Enter text here..."></textarea>
-        <button onclick="convertText()">Convert</button>
-        <input type="text" id="output" readonly>
+        <textarea id="input" rows="5" placeholder="Enter text or runes here..."></textarea>
+        <div class="button-container">
+            <button onclick="convertToRunic()">Convert to Runic</button>
+            <button onclick="convertToText()">Convert to Text</button>
+        </div>
+        <textarea id="output" rows="5" readonly></textarea>
     </div>
 
     <div id="integrated-terminal"></div>
@@ -20,10 +26,6 @@
     <div id="treasury-container">
         <a href="https://app.squads.so/squads/EKExYCyFcUQFBm9WtJSWV4xawBpEAHRR5tHPxHpbLpmE/home" id="treasury-link" target="_blank">Runes Multi Sig Treasury</a>
         <div id="wallet-balance">Loading balance...</div>
-    </div>
-
-    <div id="bottom-image-container">
-        <img src="../mnt/data/sytones3.png" alt="Centered bottom image" id="bottom-image">
     </div>
 
     <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
