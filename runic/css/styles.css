@@ -67,18 +67,43 @@ button:hover {
     z-index: 0;
 }
 
-#treasury-link {
+#treasury-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 420px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+#treasury-link {
     color: #00ff00;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    text-align: center;
-    z-index: 2;
+    display: block;
+    margin-bottom: 10px;
     animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+#wallet-balance {
+    color: #00ff00;
+    font-size: 1rem;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+#bottom-image-container {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#bottom-image {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
 }
 
 @keyframes glow {
@@ -106,5 +131,18 @@ button:hover {
 
     #treasury-link {
         font-size: 1rem;
+    }
+
+    #wallet-balance {
+        font-size: 0.9rem;
+    }
+
+    #bottom-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    #treasury-container {
+        bottom: 320px;
     }
 }
